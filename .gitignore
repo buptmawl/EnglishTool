@@ -1,0 +1,23 @@
+# Dependencies
+node_modules
+dist
+.output
+.vercel
+
+# Environment variables
+.env
+.env.local
+.env.*.local
+
+# IDE and System files
+.DS_Store
+.vscode
+.idea
+*.log
+
+# Build outputs
+dist-ssr
+*.local
+
+.trae/doubao.sh
+.trae/doubao.py
