@@ -15,7 +15,12 @@ app.use('/api/*', (req, res) => {
 });
 
 const server = app.listen(PORT, () => {
-  console.log(`Server ready on port ${PORT}`);
+  const timestamp = new Date().toLocaleString();
+  console.log(`\n🚀 [BACKEND] Server is successfully started!`);
+  console.log(`📅 Time: ${timestamp}`);
+  console.log(`🌐 URL: http://localhost:${PORT}`);
+  console.log(`📝 Logs are being written to: combined.log (when running in background)`);
+  console.log(`--------------------------------------------------\n`);
 });
 
 /**
